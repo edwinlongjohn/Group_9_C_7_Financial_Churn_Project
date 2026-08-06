@@ -16,6 +16,21 @@ It uses a synthetic Nigerian bank-customer dataset containing demographic, finan
 * Group customers into actionable risk tiers.
 * Export the verified model for interface development.
 
+## Live Application
+
+The trained churn prediction model is available as an interactive Streamlit application:
+
+[Launch the Bank Customer Churn Risk Assessment App](https://group9c7financialchurnproject-gfwaeybwfqin5sodevpswe.streamlit.app/)
+
+The application accepts the 45 customer inputs used by the model and produces:
+
+- Predicted churn probability
+- Classification decision using the selected 0.57 threshold
+- Customer risk tier
+- Human-supervised retention recommendation
+
+> **Important:** This application is an educational proof of concept trained on synthetic data. It should not be used for real banking decisions without retraining and validation using genuine customer data.
+
 ## Dataset
 
 The project uses a fully synthetic dataset created for academic and educational purposes. It contains no genuine bank records, personally identifiable information or confidential customer data.
