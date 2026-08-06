@@ -1,0 +1,372 @@
+{
+    "number_of_features": 45,
+    "feature_names_in_order": [
+        "Geopolitical_Zone",
+        "State",
+        "Residence_Type",
+        "Age",
+        "Gender",
+        "Marital_Status",
+        "Education_Level",
+        "Occupation",
+        "Income_Regularity",
+        "Monthly_Income_NGN",
+        "Account_Type",
+        "Salary_Account",
+        "Tenure_Years",
+        "Account_Balance_NGN",
+        "Account_Balance_3M_Ago_NGN",
+        "Balance_Change_Pct_3M",
+        "Number_of_Products",
+        "Has_Debit_Card",
+        "Has_Credit_Card",
+        "Mobile_Banking",
+        "Internet_Banking",
+        "USSD_Banking",
+        "Preferred_Channel",
+        "Digital_Transaction_Share",
+        "Digital_Engagement",
+        "Monthly_Transactions_3M_Ago",
+        "Monthly_Transactions_Current",
+        "Transaction_Change_Pct_3M",
+        "Transaction_Frequency",
+        "Monthly_Transaction_Value_NGN",
+        "Months_Inactive_12M",
+        "Days_Since_Last_Transaction",
+        "Active_Member",
+        "Failed_Transactions_3M",
+        "Customer_Service_Contacts_6M",
+        "Complaints_6M",
+        "Unresolved_Complaints_6M",
+        "Average_Resolution_Days",
+        "Monthly_Bank_Fees_NGN",
+        "Fee_to_Income_Pct",
+        "Satisfaction_Score",
+        "Loan_Status",
+        "Loan_Amount_NGN",
+        "Credit_Score",
+        "Active_Account_at_Another_Bank"
+    ],
+    "feature_dtypes": {
+        "Geopolitical_Zone": "object",
+        "State": "object",
+        "Residence_Type": "object",
+        "Age": "int64",
+        "Gender": "object",
+        "Marital_Status": "object",
+        "Education_Level": "object",
+        "Occupation": "object",
+        "Income_Regularity": "object",
+        "Monthly_Income_NGN": "int64",
+        "Account_Type": "object",
+        "Salary_Account": "object",
+        "Tenure_Years": "float64",
+        "Account_Balance_NGN": "int64",
+        "Account_Balance_3M_Ago_NGN": "int64",
+        "Balance_Change_Pct_3M": "float64",
+        "Number_of_Products": "int64",
+        "Has_Debit_Card": "object",
+        "Has_Credit_Card": "object",
+        "Mobile_Banking": "object",
+        "Internet_Banking": "object",
+        "USSD_Banking": "object",
+        "Preferred_Channel": "object",
+        "Digital_Transaction_Share": "float64",
+        "Digital_Engagement": "object",
+        "Monthly_Transactions_3M_Ago": "int64",
+        "Monthly_Transactions_Current": "int64",
+        "Transaction_Change_Pct_3M": "float64",
+        "Transaction_Frequency": "object",
+        "Monthly_Transaction_Value_NGN": "int64",
+        "Months_Inactive_12M": "int64",
+        "Days_Since_Last_Transaction": "int64",
+        "Active_Member": "object",
+        "Failed_Transactions_3M": "int64",
+        "Customer_Service_Contacts_6M": "int64",
+        "Complaints_6M": "int64",
+        "Unresolved_Complaints_6M": "int64",
+        "Average_Resolution_Days": "float64",
+        "Monthly_Bank_Fees_NGN": "int64",
+        "Fee_to_Income_Pct": "float64",
+        "Satisfaction_Score": "int64",
+        "Loan_Status": "object",
+        "Loan_Amount_NGN": "int64",
+        "Credit_Score": "int64",
+        "Active_Account_at_Another_Bank": "object"
+    },
+    "categorical_values_observed": {
+        "Geopolitical_Zone": [
+            "North Central",
+            "North East",
+            "North West",
+            "South East",
+            "South South",
+            "South West"
+        ],
+        "State": [
+            "Abia",
+            "Adamawa",
+            "Akwa Ibom",
+            "Anambra",
+            "Bauchi",
+            "Bayelsa",
+            "Benue",
+            "Borno",
+            "Cross River",
+            "Delta",
+            "Ebonyi",
+            "Edo",
+            "Ekiti",
+            "Enugu",
+            "FCT",
+            "Gombe",
+            "Imo",
+            "Jigawa",
+            "Kaduna",
+            "Kano",
+            "Katsina",
+            "Kebbi",
+            "Kogi",
+            "Kwara",
+            "Lagos",
+            "Nasarawa",
+            "Niger",
+            "Ogun",
+            "Ondo",
+            "Osun",
+            "Oyo",
+            "Plateau",
+            "Rivers",
+            "Sokoto",
+            "Taraba",
+            "Yobe",
+            "Zamfara"
+        ],
+        "Residence_Type": [
+            "Rural",
+            "Urban"
+        ],
+        "Gender": [
+            "Female",
+            "Male"
+        ],
+        "Marital_Status": [
+            "Married",
+            "Separated/Widowed",
+            "Single"
+        ],
+        "Education_Level": [
+            "HND/Bachelor",
+            "No formal",
+            "OND/NCE",
+            "Postgraduate",
+            "Primary",
+            "Secondary"
+        ],
+        "Occupation": [
+            "Artisan/Skilled Trade",
+            "Business Owner",
+            "Civil Servant",
+            "Manager/Executive",
+            "Other",
+            "Private Employee",
+            "Professional/Technician",
+            "Retired",
+            "Self-Employed",
+            "Student",
+            "Trader",
+            "Unemployed"
+        ],
+        "Income_Regularity": [
+            "Irregular",
+            "Regular",
+            "Variable"
+        ],
+        "Account_Type": [
+            "Current",
+            "Salary",
+            "Savings",
+            "Student"
+        ],
+        "Salary_Account": [
+            "No",
+            "Yes"
+        ],
+        "Has_Debit_Card": [
+            "No",
+            "Yes"
+        ],
+        "Has_Credit_Card": [
+            "No",
+            "Yes"
+        ],
+        "Mobile_Banking": [
+            "No",
+            "Yes"
+        ],
+        "Internet_Banking": [
+            "No",
+            "Yes"
+        ],
+        "USSD_Banking": [
+            "No",
+            "Yes"
+        ],
+        "Preferred_Channel": [
+            "ATM",
+            "Branch",
+            "Mobile App",
+            "POS",
+            "USSD",
+            "Web Transfer"
+        ],
+        "Digital_Engagement": [
+            "High",
+            "Low",
+            "Medium"
+        ],
+        "Transaction_Frequency": [
+            "High",
+            "Low",
+            "Medium",
+            "Very High"
+        ],
+        "Active_Member": [
+            "No",
+            "Yes"
+        ],
+        "Loan_Status": [
+            "Completed",
+            "Current",
+            "Defaulted",
+            "Delinquent",
+            "No Loan"
+        ],
+        "Active_Account_at_Another_Bank": [
+            "No",
+            "Yes"
+        ]
+    },
+    "numeric_ranges_observed": {
+        "Age": {
+            "minimum_observed": 18.0,
+            "maximum_observed": 75.0,
+            "median": 39.0
+        },
+        "Monthly_Income_NGN": {
+            "minimum_observed": 20000.0,
+            "maximum_observed": 3500000.0,
+            "median": 186000.0
+        },
+        "Tenure_Years": {
+            "minimum_observed": 0.2,
+            "maximum_observed": 25.0,
+            "median": 3.7
+        },
+        "Account_Balance_NGN": {
+            "minimum_observed": -299100.0,
+            "maximum_observed": 8212100.0,
+            "median": 101000.0
+        },
+        "Account_Balance_3M_Ago_NGN": {
+            "minimum_observed": -544100.0,
+            "maximum_observed": 7732700.0,
+            "median": 100600.0
+        },
+        "Balance_Change_Pct_3M": {
+            "minimum_observed": -0.671,
+            "maximum_observed": 0.646,
+            "median": 0.022
+        },
+        "Number_of_Products": {
+            "minimum_observed": 1.0,
+            "maximum_observed": 6.0,
+            "median": 2.0
+        },
+        "Digital_Transaction_Share": {
+            "minimum_observed": 0.02,
+            "maximum_observed": 0.98,
+            "median": 0.58
+        },
+        "Monthly_Transactions_3M_Ago": {
+            "minimum_observed": 1.0,
+            "maximum_observed": 65.0,
+            "median": 19.0
+        },
+        "Monthly_Transactions_Current": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 86.0,
+            "median": 19.0
+        },
+        "Transaction_Change_Pct_3M": {
+            "minimum_observed": -1.0,
+            "maximum_observed": 2.5,
+            "median": 0.0
+        },
+        "Monthly_Transaction_Value_NGN": {
+            "minimum_observed": 7300.0,
+            "maximum_observed": 10922700.0,
+            "median": 257900.0
+        },
+        "Months_Inactive_12M": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 8.0,
+            "median": 2.0
+        },
+        "Days_Since_Last_Transaction": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 150.0,
+            "median": 6.0
+        },
+        "Failed_Transactions_3M": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 7.0,
+            "median": 0.0
+        },
+        "Customer_Service_Contacts_6M": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 6.0,
+            "median": 0.0
+        },
+        "Complaints_6M": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 3.0,
+            "median": 0.0
+        },
+        "Unresolved_Complaints_6M": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 2.0,
+            "median": 0.0
+        },
+        "Average_Resolution_Days": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 25.8,
+            "median": 0.0
+        },
+        "Monthly_Bank_Fees_NGN": {
+            "minimum_observed": 200.0,
+            "maximum_observed": 4600.0,
+            "median": 1800.0
+        },
+        "Fee_to_Income_Pct": {
+            "minimum_observed": 0.04,
+            "maximum_observed": 17.0,
+            "median": 0.94
+        },
+        "Satisfaction_Score": {
+            "minimum_observed": 1.0,
+            "maximum_observed": 5.0,
+            "median": 4.0
+        },
+        "Loan_Amount_NGN": {
+            "minimum_observed": 0.0,
+            "maximum_observed": 20000000.0,
+            "median": 0.0
+        },
+        "Credit_Score": {
+            "minimum_observed": 320.0,
+            "maximum_observed": 850.0,
+            "median": 647.0
+        }
+    }
+}

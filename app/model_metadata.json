@@ -1,0 +1,28 @@
+{
+    "project": "Bank Customer Churn Prediction",
+    "model_name": "Weighted Gradient Boosting",
+    "classification_threshold": 0.57,
+    "risk_tier_boundaries": {
+        "low": "0.00 <= probability < 0.30",
+        "moderate": "0.30 <= probability < 0.57",
+        "high": "0.57 <= probability < 0.75",
+        "very_high": "0.75 <= probability <= 1.00"
+    },
+    "held_out_results": {
+        "test_customers": 3000,
+        "actual_churners": 550,
+        "true_negatives": 2107,
+        "false_positives": 343,
+        "false_negatives": 264,
+        "true_positives": 286,
+        "customers_flagged": 629
+    },
+    "software_versions": {
+        "python": "3.12.13",
+        "numpy": "2.0.2",
+        "pandas": "2.2.2",
+        "scikit_learn": "1.6.1",
+        "cloudpickle": "3.1.2"
+    },
+    "data_notice": "This proof-of-concept model was trained and evaluated using synthetic data."
+}
