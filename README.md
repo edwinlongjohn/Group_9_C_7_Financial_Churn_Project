@@ -176,16 +176,17 @@ The exported package was reloaded successfully and reproduced the notebook predi
 
 A separate interface is planned to collect customer information and display the predicted churn probability, churn status, risk tier and suggested retention attention.
 
-## Limitations
+## Limitations and Future Improvements
 
-* The dataset is entirely synthetic.
-* The model has not been validated using genuine banking data.
-* False-positive and false-negative predictions remain.
-* Predictive associations do not establish causation.
-* The risk-tier boundaries are operational illustrations.
-* A complete fairness and probability-calibration assessment has not been conducted.
+This project is an educational proof of concept and has the following limitations:
 
-The model should therefore be treated as an educational proof of concept, not a production-ready banking decision system.
+- The model was trained on synthetic customer data. Its performance therefore does not establish that it will generalize to genuine bank customers.
+- The full model uses 45 input features. Although this allows the model to evaluate a broad range of customer characteristics, manually entering all 45 values may reduce the usability of the current standalone application.
+- The inclusion of 45 features does not mean that every feature contributes equally to the prediction.
+- Some demographic and geographic relationships learned from synthetic data may not represent genuine customer behaviour and should not be interpreted as causal relationships.
+- The application provides decision support only and should not be used as the sole basis for real customer-retention decisions.
+
+Future development should compare the full model with reduced-feature models using feature-importance and feature-selection methods. Models using the strongest 10, 15 or 20 predictors can be evaluated to identify the smallest feature set that maintains acceptable predictive performance. In a real banking environment, many required values would also be retrieved automatically from the bank’s database rather than entered manually.
 
 ## AI-Assisted Development Disclosure
 
